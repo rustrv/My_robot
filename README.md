@@ -11,7 +11,7 @@
 docker pull ruslantrufanov/myrobot3:v3
 
 2. После скачивания Docker image вам необходимо запустить данный образ со следующими параметрами,
-которые обеспечивают проброс камеры и графического дисплея для работы в Rviz в контейнер,
+которые обеспечивают проброс камеры и графического дисплея для работы в контейнере Rviz,
 а также в контейнере уже проброшен shh тунель:
 
 docker run -d --rm --device=/dev/video0 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix ruslantrufanov/myrobot3:v3
