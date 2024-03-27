@@ -45,7 +45,7 @@ docker run -d --rm --device=/dev/video0 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/t
 
 rosrun cv_camera cv_camera_node _width:=640 _height:=480 _framerate:=30
 
-8. Далее, вам нужно апустить Rviz по команде :
+8. Далее, вам нужно запустить Rviz по команде :
 
   rosrun rviz rviz
   
